@@ -7,7 +7,7 @@ body {
        background-color: #FAF4D3;
 } 
 header {
-       background-color: #92a48a;
+       background: linear-gradient(#92a48a,#6f7c68);
        text-align: center;
        object-fit: contain;
 }
@@ -57,7 +57,7 @@ header {
        align-items: center;
 }
 footer {
-       background-color:#92A48A; 
+       background: linear-gradient(#92a48a,#6f7c68); 
        font-family: Arial, Helvetica, sans-serif;
        padding-left: 240px;
        padding-right: 240px;
