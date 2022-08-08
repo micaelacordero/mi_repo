@@ -67,13 +67,6 @@ nav ul li:hover {
        background-color: #8e9e88 ;
 }
 
-.card a {
-       transition: 1s
-}
-
-.card a:hover {
-       background-color: #58493e;
-}
 .datos {
        justify-content: baseline;
        align-items: center;
