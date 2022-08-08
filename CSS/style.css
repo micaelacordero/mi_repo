@@ -22,6 +22,15 @@ nav ul {
        text-align: center; 
 }
 
+nav ul li {
+       transition: all 1s;
+
+}
+
+nav ul li:hover {
+       background-color: #58493e;
+}
+
 .menu a {
        text-decoration: none;
        color: white;
@@ -36,7 +45,7 @@ nav ul {
        padding: 5px 10px;
 }
 
-#carouselExampleIndicators {
+.carousel {
          text-align: center;
 }
 
@@ -48,8 +57,23 @@ nav ul {
        font-family: Arial, Helvetica, sans-serif; 
        margin: auto;
        text-align: center;
-}     
+} 
 
+.card {
+       transition: all 2s;
+}
+
+.card:hover {
+       background-color: #8e9e88 ;
+}
+
+.card a {
+       transition: 1s
+}
+
+.card a:hover {
+       background-color: #58493e;
+}
 .datos {
        justify-content: baseline;
        align-items: center;
