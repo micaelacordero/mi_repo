@@ -1,0 +1,215 @@
+*{
+       margin: 0;
+       padding: 0;
+}
+
+body {
+       background-color: #FAF4D3;
+} 
+header {
+       background:#92a48a;
+       text-align: center;
+       object-fit: contain;
+}
+
+nav {
+       font-family: Arial, Helvetica, sans-serif;
+       background-color: #766153;
+}
+nav ul {
+       align-items: center;
+       list-style-type: none;
+       text-align: center; 
+}
+
+nav ul li {
+       transition: all 1s;
+
+}
+
+nav ul li:hover {
+       background-color: #58493e;
+}
+
+.menu a {
+       text-decoration: none;
+       color: white;
+       font-size: 14px;
+}       
+.menu li a {
+         text-decoration: none;
+}
+.menu li {
+       display: inline-table;
+       width: 15%;
+       padding: 5px 10px;
+}
+
+.carousel {
+         text-align: center;
+}
+
+.productosDestacados__titulo {
+       font-family: Arial, Helvetica, sans-serif; 
+       text-align: center;
+} 
+.productosDestacados__productos {
+       font-family: Arial, Helvetica, sans-serif; 
+       margin: auto;
+       text-align: center;
+} 
+
+.card {
+       transition: all 2s;
+}
+
+.card:hover {
+       background-color: #8e9e88 ;
+}
+
+.datos {
+       justify-content: baseline;
+       align-items: center;
+}
+footer {
+       background:#92a48a; 
+       font-family: Arial, Helvetica, sans-serif;
+       padding-left: 240px;
+       padding-right: 240px;
+       margin-top: 100px;
+       text-align: center;
+
+}
+footer li {
+       list-style-type: none; 
+       text-align: center;
+}
+
+
+/*CSS de Productos*/
+.productos__titulo {
+       font-family: Arial, Helvetica, sans-serif;
+       text-align: center;
+}
+.productos__piezas {
+       margin: auto;
+       text-align: center;
+}
+
+/*CSS de Pedidos Personalizados*/
+.slider2 {
+       text-align: center;
+}
+.slider2__titulo { 
+       font-family: Arial, Helvetica, sans-serif; 
+       text-align: center;
+}
+.form {
+       text-align: center;
+}
+
+/*CSS de Nuestra Historia*/
+.historia {
+       text-align: center;
+}
+.historia__titulo {
+       font-family: Arial, Helvetica, sans-serif;
+}
+.historia__parrafo {
+   text-indent: 30px;
+   display: inline-block;    
+   text-align: justify;
+}
+
+/*CSS de Contacto*/
+.slider3 {
+       text-align: center;
+}
+.slider3__titulo {
+       font-family: Arial, Helvetica, sans-serif;
+}
+.formularioContacto {
+       text-align: center;
+}  
+  
+
+/*Grids - Flexbox*/
+
+header {
+       grid-area: header;
+       display: flex;
+       justify-content: center;
+}
+
+.menu {
+       grid-area: menu;
+       display: flex;
+       justify-content: center;
+}
+
+section {
+       display: flex;
+       flex-direction: column;
+}
+.slider {
+       grid-area: slider;
+}
+
+.prodructosDestacados {
+       grid-area: productos;
+}
+
+footer {
+       grid-area: footer;
+       display: flex;
+       justify-content: center;
+}
+
+footer li {
+       display: flex;
+       justify-content: center;
+}
+       
+       
+@media screen and (min-width: 360px) {
+       #main {
+           grid-template-columns: auto;
+           grid-template-rows: 6% 3,5% 40% auto 30%;
+           grid-template-areas: "header" "menu" "slider" "productosDestacados" "footer";
+       }
+       
+       .datos__redes, .datos__pago {
+              display: none;
+       }
+       .p1, .p2, .p3, .p4 {
+              display: flex;
+              flex-direction: column;
+       }
+        
+       }
+       
+
+   
+   @media screen and (min-width: 1200px) {
+       #main {
+           grid-template-columns: auto;
+           grid-template-rows: 6% 3,5% 40% auto 30%;
+           grid-template-areas: "header header" "menu menu" "slider slider" "productosDestacados productosDestacados" "footer footer";
+       }
+       
+       .datos__redes, .datos__pago {
+              display: inline-block;
+              justify-content: space-between;
+
+       }
+
+       .p1, .p2, .p3, .p4 {
+              display: inline-table;
+       }
+
+   }
+            
+       
+
+
+

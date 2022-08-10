@@ -1,0 +1,18 @@
+@media screen and (min-width: 1200px) {
+    #main {
+        grid-template-columns: auto;
+        grid-template-rows: 6% 3,5% 40% auto 30%;
+        grid-template-areas: "header header" "menu menu" "slider slider" "productosDestacados productosDestacados" "footer footer";
+    }
+    
+    .datos__redes, .datos__pago {
+           display: inline-block;
+           justify-content: space-between;
+
+    }
+
+    .p1, .p2, .p3, .p4 {
+           display: inline-table;
+    }
+
+}
