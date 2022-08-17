@@ -186,7 +186,7 @@ footer li {
 @media screen and (min-width: 360px) {
   #main {
     grid-template-columns: auto;
-    grid-template-rows: 6% 3, 5% 40% auto 30%;
+    grid-template-rows: 6% 3, 5% 40% auto 15%;
     grid-template-areas: "header" "menu" "slider" "productosDestacados" "footer";
   }
   .datos__redes, .datos__pago {
