@@ -43,8 +43,12 @@ nav {
     text-align: center;
 } 
 .productosDestacados__productos {
+    margin: 1rem auto;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
-    margin: auto;
+    text-align: center;
+    .p1, .p2, .p3, .p4 {
+        margin-right: 25px;
+    }
 } 
 
 .card {
@@ -85,20 +89,14 @@ footer {
     text-align: center;
 }
 .productos__piezas {
+    margin: 1rem auto;
     text-align: center;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;  
-}
-
-.productos__piezas2 {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    text-align: center;
-    margin-top: 20px;
-    margin-right: 2px;
-    .p4, .p5, .p6, .p7 {
-        margin-right: 22px;
-    }
+    .p1, .p2, .p3, .p4, .p5, .p6, .p7, .p8 {
+        margin-top: 35px;
+        margin-right: 25px;
+    } 
 }
-
 
 
 /*CSS de Pedidos Personalizados*/

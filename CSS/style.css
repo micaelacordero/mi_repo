@@ -47,8 +47,12 @@ nav ul li:hover {
 }
 
 .productosDestacados__productos {
+  margin: 1rem auto;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  margin: auto;
+  text-align: center;
+}
+.productosDestacados__productos .p1, .productosDestacados__productos .p2, .productosDestacados__productos .p3, .productosDestacados__productos .p4 {
+  margin-right: 25px;
 }
 
 .card {
@@ -91,18 +95,13 @@ footer ul li {
 }
 
 .productos__piezas {
+  margin: 1rem auto;
   text-align: center;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
-
-.productos__piezas2 {
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  text-align: center;
-  margin-top: 20px;
-  margin-right: 2px;
-}
-.productos__piezas2 .p4, .productos__piezas2 .p5, .productos__piezas2 .p6, .productos__piezas2 .p7 {
-  margin-right: 22px;
+.productos__piezas .p1, .productos__piezas .p2, .productos__piezas .p3, .productos__piezas .p4, .productos__piezas .p5, .productos__piezas .p6, .productos__piezas .p7, .productos__piezas .p8 {
+  margin-top: 35px;
+  margin-right: 25px;
 }
 
 /*CSS de Pedidos Personalizados*/
