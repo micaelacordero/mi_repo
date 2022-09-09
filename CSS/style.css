@@ -6,6 +6,7 @@
 
 body {
   background-color: #FAFFFD;
+  overflow-x: hidden;
 }
 
 header {
@@ -53,6 +54,7 @@ nav ul li:hover {
 }
 .productosDestacados__productos .p1, .productosDestacados__productos .p2, .productosDestacados__productos .p3, .productosDestacados__productos .p4 {
   margin-right: 25px;
+  margin-top: 35px;
 }
 
 .card {
@@ -108,13 +110,6 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.col-3 {
-  margin-top: 15px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 /*CSS de Nuestra Historia*/
