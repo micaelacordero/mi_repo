@@ -54,11 +54,16 @@ nav {
 } 
 
 .card {
+    display: flex;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border-width: 2px;
+    border-color: black;
     transition: all 0.03;
     &:hover {
             background-color: #8e9e88;
             transform: translateY(-15px);      
-    }
+    }  
 }
 
 .datos {
@@ -80,13 +85,14 @@ footer {
 }
 
 /*CSS de Productos*/
-.productos__titulo {
-    margin: 15px;
-    padding: 15px;
+#productos {
+    
+    text-transform: capitalize;
+    font-size: 35px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: center;
 }
-.productos__piezas {
+#productos {
     margin: 1rem auto;
     text-align: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -94,7 +100,10 @@ footer {
         margin-top: 35px;
         margin-right: 25px;
     } 
+    
 }
+
+
 
 
 /*CSS de Pedidos Personalizados*/

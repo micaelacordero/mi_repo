@@ -58,6 +58,11 @@ nav ul li:hover {
 }
 
 .card {
+  display: flex;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  border-width: 2px;
+  border-color: black;
   transition: all 0.03;
 }
 .card:hover {
@@ -83,19 +88,19 @@ footer {
 }
 
 /*CSS de Productos*/
-.productos__titulo {
-  margin: 15px;
-  padding: 15px;
+#productos {
+  text-transform: capitalize;
+  font-size: 35px;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   text-align: center;
 }
 
-.productos__piezas {
+#productos {
   margin: 1rem auto;
   text-align: center;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
-.productos__piezas .p1, .productos__piezas .p2, .productos__piezas .p3, .productos__piezas .p4, .productos__piezas .p5, .productos__piezas .p6, .productos__piezas .p7, .productos__piezas .p8 {
+#productos .p1, #productos .p2, #productos .p3, #productos .p4, #productos .p5, #productos .p6, #productos .p7, #productos .p8 {
   margin-top: 35px;
   margin-right: 25px;
 }
