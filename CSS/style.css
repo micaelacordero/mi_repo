@@ -100,10 +100,6 @@ footer {
   text-align: center;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
-#productos .p1, #productos .p2, #productos .p3, #productos .p4, #productos .p5, #productos .p6, #productos .p7, #productos .p8 {
-  margin-top: 35px;
-  margin-right: 25px;
-}
 
 /*CSS de Pedidos Personalizados*/
 .slider2 {

@@ -1,60 +1,35 @@
 /* js productos*/
 
-let producto1 = { 
-  nombre:"bacha artesanal",
-  precio: 4850,
-  stock: 5,
-  imagen: "../media/BachaArtesanal.jpeg"
-}
- 
-let producto2 = {
-  nombre: "jarrita acqua",
-  precio: 1200,
-  stock: 20,
-  imagen:"../media/Jarrita Acqua.jpeg"
-}
- 
-let producto3 = {
-  nombre:"jarrón rubí",
-  precio: 3300,
-  stock: 25,
-  imagen:"../media/JarrónRubí.jpeg"
-}
- 
-let producto4 = {
-  nombre:"cuenco acqua",
-  precio: 1300,
-  stock: 30,
-  imagen:"../media/CuencoAcqua.jpeg"
+function Producto (nombre, precio, stock, img) {
+  this.nombre = nombre;
+  this.precio = precio;
+  this.stock = stock || 0;
+  this.img = img
+  this.restarStock = function(cantidad){
+    this.stock -= cantidad
+  }
+  {
+    this.sumarStock = function(cantidad){
+      this.stock += cantidad
+    }
+  }
 }
 
-let producto5 = { 
-  nombre:"taza rústica rubí",
-  precio: 1500,
-  stock: 50,
-  imagen:"../media/TazarústicaRubi.jpeg"
-}
+let producto1 = new Producto ("bacha artesanal", 4850, 5, "../media/BachaArtesanal.jpeg")
+ 
+let producto2 = new Producto ("jarrita acqua", 1200, 20,"../media/Jarrita Acqua.jpeg")
+ 
+let producto3 = new Producto ("jarrón rubí", 3300, 25, "../media/JarrónRubí.jpeg")
+ 
+let producto4 = new Producto ("cuenco acqua", 1300, 30, "../media/CuencoAcqua.jpeg")
+
+let producto5 = new Producto ("taza rústica rubí", 1500, 50, "../media/TazarústicaRubi.jpeg")
     
-let producto6 = {
-  nombre:"hornito rubí",
-  precio: 1900,
-  stock: 30,
-  imagen:"../media/HornitoRubí.jpeg"
-}
+let producto6 = new Producto ("hornito rubí", 1900, 30, "../media/HornitoRubí.jpeg")
 
-let producto7 = {
-  nombre:"ensaladera mar",
-  precio: 2800,
-  stock: 20,
-  imagen:"../media/EnsaladeraMar.jpeg"
-}
+let producto7 = new Producto ("ensaladera mar", 2800, 20, "../media/EnsaladeraMar.jpeg")
  
-let producto8 = {
-  nombre:"mate acqua",
-  precio: 1400,
-  stock: 70,
-  imagen:"../media/MateAcqua.jpeg"
-}
+let producto8 = new Producto ("mate acqua", 1400, 70, "../media/MateAcqua.jpeg")
 
 let listaProductos = [producto1, producto2, producto3, producto4, producto5, producto6, producto7, producto8]
 
@@ -64,18 +39,19 @@ let listaNombres = listaProductosConStock.map((prod) => prod.nombre)
 
 let precioTotal = 0
 
+/*Cards*/
 
 let productos = document.getElementById("productos")
-
-for (const prod of listaProductosConStock){
   
-  let card = document.createElement("div")
+for (const prod of listaProductosConStock){
 
-  card.className ="card"
+let card = document.createElement("div")
 
-  card.innerHTML = `<img src="${prod.imagen}" height="200" width="400"></imagen><h1>${prod.nombre}</h1><p>Precio: $${prod.precio}</p><button id="boton"${prod.listaProductos}>Comprar</button>`
+card.className = "card"
 
-  productos.append(card)
+card.innerHTML = `<img src="${prod.img}" height="200" width="400"></imagen><h1>${prod.nombre}</h1><p>Precio: $${prod.precio}</p><button id="boton"${prod.listaProductos}>Comprar</button>`
+
+productos.append(card)
 }
 
 let boton = document.getElementById("boton")
@@ -83,5 +59,9 @@ let boton = document.getElementById("boton")
 boton.addEventListener("click", mostrarPorConsola)
 
 function mostrarPorConsola(){
-  console.log("Hiciste click")
+  console.log("click")
 }
+
+let input = document.getElementById("search")
+
+input.addEventListener('input', () => {console.log(input.value)})
