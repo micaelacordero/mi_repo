@@ -49,19 +49,12 @@ let card = document.createElement("div")
 
 card.className = "card"
 
-card.innerHTML = `<img src="${prod.img}" height="200" width="400"></imagen><h1>${prod.nombre}</h1><p>Precio: $${prod.precio}</p><button id="boton"${prod.listaProductos}>Comprar</button>`
+card.innerHTML = `<img src="${prod.img}" height="200" width="400"></imagen><h1>${prod.nombre}</h1>
+<p>Precio: $${prod.precio}</p>
+<button id="boton"${prod.Producto}>Comprar</button>`
 
 productos.append(card)
 }
 
-let boton = document.getElementById("boton")
+/*Button*/
 
-boton.addEventListener("click", mostrarPorConsola)
-
-function mostrarPorConsola(){
-  console.log("click")
-}
-
-let input = document.getElementById("search")
-
-input.addEventListener('input', () => {console.log(input.value)})
